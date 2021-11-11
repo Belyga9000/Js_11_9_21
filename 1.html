@@ -22,7 +22,19 @@
 <script>
   "use strict";
 
-  // Здесь пишем решение, данный комментарий необходимо стереть.
+  const Celsstr = prompt('Введите температуру в Цельсиях:');
+  let Celsnum = parseInt(Celsstr);
+
+  if(isNaN(Celsnum) === true) {
+    alert('Введено не число');
+    document.location.reload();
+  }
+  else {
+    const Farhnum = (9 / 5) * Celsnum + 32;
+
+    alert(`Цельсий: ${Celsnum}, Фаренгейт: ${Farhnum}`);
+
+  }
 </script>
 </body>
 </html>
